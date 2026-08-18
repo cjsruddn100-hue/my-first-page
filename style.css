@@ -1,0 +1,210 @@
+body {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  line-height: 1.7;
+  color: #333333;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.title {
+  font-size: 32px;
+  color: #111827;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 12px;
+}
+.subtitle {
+  font-size: 22px;
+  color: #2563eb;
+  margin-top: 28px;
+}
+.desc {
+  font-size: 16px;
+  color: #6b7280;
+}
+.highlight {
+  background-color: #eff4ff;
+  border-left: 5px solid #2563eb;
+  padding: 14px 18px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+.profile-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.profile-photo {
+  width: 60%;
+  border-radius: 12px;
+}
+.avatar-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #e5e7eb;
+  background-color: #9ca3af;
+}
+.small-image {
+  width: 50%;
+  border-radius: 8px;
+  margin: 24px 0;
+}
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-top: 16px;
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.btn:hover {
+  background-color: #1d4ed8;
+}
+.link {
+  color: #2563eb;
+  font-weight: 600;
+}
+.link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+.color-list {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+.color-box {
+  padding: 16px;
+  border-radius: 12px;
+  color: #ffffff;
+}
+.color-rgba {
+  background-color: rgba(37, 99, 255, 0.5);
+}
+.color-hex {
+  background-color: #7c3aed;
+}
+.color-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+}
+.color-value {
+  font-size: 14px;
+}
+.text {
+  color: #2563eb;
+}
+.background {
+  background-color: #eff4ff;
+  padding: 16px;
+}
+.card {
+  border: 2px solid #d1d5db;
+  border-radius: 20px;
+  padding: 16px;
+  overflow: hidden;
+}
+.profile {
+  width: 200px;
+  height: 200px;
+  background-color: darkgray;
+  border: 2px solid lightgray;
+  border-radius: 20%;
+}
+
+/* 9. Display */
+.block {
+  width: 200px;
+  height: 50px;
+  background-color: lightblue;
+  margin: 10px;
+}
+.inline {
+  width: 200px;
+  height: 50px;
+  background-color: lightpink;
+  margin: 10px;
+}
+.inline-block {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background-color: lightgreen;
+  margin: 10px;
+}
+
+/* 10. Flexbox */
+.display-none {
+  display: none;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px 60px;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 300px;
+  background-color: #e7e7e7;
+}
+.flex-item {
+  width: 120px;
+  height: 80px;
+  background-color: lightblue;
+  border: 1px solid #999999;
+}
+.content-box {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border: 2px solid red;
+}
+
+/* 맨 위로 버튼 (화면 우측 하단 고정) */
+.top-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 100;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 모바일 화면 */
+@media (max-width: 600px) {
+  body {
+    width: 92%;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .profile-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flex-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+}
